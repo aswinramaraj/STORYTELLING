@@ -1,0 +1,270 @@
+
+.story-generator-container {
+  padding: 60px 40px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 36px;
+  color: #1f2937;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.story-card-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.form-card,
+.output-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  width: 550px;
+  text-align: left;
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.output-card h2 {
+  color: #10b981;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #374151;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #f9fafb;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.generate-btn {
+  margin-top: 20px;
+  background: linear-gradient(to right, #3b82f6, #10b981);
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.generate-btn:hover {
+  background: linear-gradient(to right, #10b981, #3b82f6);
+  transition: 0.3s ease;
+  transform: translateY(-2px);
+}
+
+.book-icon {
+  font-size: 32px;
+  color: #9ca3af;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.placeholder {
+  text-align: center;
+  color: #6b7280;
+}
+
+.story-text {
+  color: #374151;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Description Input */
+.description-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f9fafb;
+  resize: vertical;
+  min-height: 100px;
+  margin-bottom: 15px;
+  
+}
+
+/* Next Button */
+.next-btn {
+  background: linear-gradient(to right, #3b82f6, #10b981);
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+.next-btn:hover {
+  background: linear-gradient(to right, #10b981, #3b82f6);
+  transition: 0.3s ease;
+  transform: translateZ(-2px);
+}
+
+/* Button Row (Generate + Reset) */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Reset Button */
+.reset-btn {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 8px 16px;
+  margin-right: 8px;
+  height: 40px;
+  width: 150px;
+  color: #2d3748;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.reset-btn:hover {
+  background: #F3C623;
+  transition: 0.6s ease ;
+  transform: translateY(-2px);
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+
+/* Container for the analysis result */
+.analysis-result {
+  background-color: #f8f9fb;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.3s ease-in-out;
+  max-width: 600px;
+}
+
+/* Title */
+.analysis-result h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.analysis-result p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Suggestions Section */
+.suggestions {
+  background-color: #fffbe6;
+  border-left: 4px solid #f1c40f;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+.suggestions h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #d35400;
+}
+
+.suggestions p {
+  margin: 5px 0 0;
+  color: #6c5b2c;
+}
+
+/* Status Indicator */
+.valid-status {
+  font-weight: bold;
+  color: #2ecc71;
+  margin-top: 10px;
+}
+
+.valid-status::before {
+  content: "✔ ";
+  color: #2ecc71;
+}
+
+/* Retry Button */
+.retry-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.retry-btn:hover {
+  background-color: #c0392b;
+}
+
+.continue-btn{
+  background: linear-gradient(to right, #2D9CFF, #27E2B6);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px;
+}
